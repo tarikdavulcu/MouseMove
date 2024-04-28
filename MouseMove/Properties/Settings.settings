@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MouseMove.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Zaman" Type="System.String" Scope="User">
+      <Value Profile="(Default)">11000</Value>
+    </Setting>
+    <Setting Name="AppName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Test</Value>
+    </Setting>
+    <Setting Name="welcomeMsg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Hoşgeldin Sevdicegim ❤️</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
