@@ -11,5 +11,8 @@
     <Setting Name="welcomeMsg" Type="System.String" Scope="User">
       <Value Profile="(Default)">Hoşgeldin Sevdicegim ❤️</Value>
     </Setting>
+    <Setting Name="TabSetting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

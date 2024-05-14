@@ -58,5 +58,17 @@ namespace MouseMove.Properties {
                 this["welcomeMsg"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public string TabSetting {
+            get {
+                return ((string)(this["TabSetting"]));
+            }
+            set {
+                this["TabSetting"] = value;
+            }
+        }
     }
 }

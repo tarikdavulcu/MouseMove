@@ -29,24 +29,24 @@ namespace MouseMove
                 var welMsg = Properties.Settings.Default["welcomeMsg"];
                 this.Text = appName.ToString();
                 Properties.Settings.Default.Save(); // Saves settings in application configuration file
-                MessageBox.Show(zmn.ToString() + " mili saniyede bir mouse hareket eder. " + welMsg.ToString(),"Hoşgeldin Mesajı");
+                MessageBox.Show(zmn.ToString() + " mili saniyede bir mouse hareket eder. " + welMsg.ToString(), "Hoşgeldin Mesajı");
                 timer1.Interval = Convert.ToInt32(zmn.ToString());
                 timer1.Start();
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show("Bir hata oluştu Hata Mesajı: " + ex.Message.ToString());
             }
-
-
         }
         private void MoveCursor()
         {
             this.Cursor = new Cursor(Cursor.Current.Handle);
             Cursor.Position = new Point(Cursor.Position.X - 5, Cursor.Position.Y - 5);
             Cursor.Clip = new Rectangle(this.Location, this.Size);
-           
+            if (Properties.Settings.Default["TabSetting"].ToString() == "Yes")
+            {
+                SendKeys.Send("%{Tab}");
+            }
         }
 
         private void Form1_Resize(object sender, EventArgs e)
