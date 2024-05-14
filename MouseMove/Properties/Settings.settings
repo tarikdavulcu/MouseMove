@@ -12,7 +12,7 @@
       <Value Profile="(Default)">Hoşgeldin Sevdicegim ❤️</Value>
     </Setting>
     <Setting Name="TabSetting" Type="System.String" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">Yes</Value>
     </Setting>
   </Settings>
 </SettingsFile>
