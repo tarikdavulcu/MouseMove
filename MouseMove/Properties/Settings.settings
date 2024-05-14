@@ -6,7 +6,7 @@
       <Value Profile="(Default)">11000</Value>
     </Setting>
     <Setting Name="AppName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Test</Value>
+      <Value Profile="(Default)">Mouse Move</Value>
     </Setting>
     <Setting Name="welcomeMsg" Type="System.String" Scope="User">
       <Value Profile="(Default)">Hoşgeldin Sevdicegim ❤️</Value>

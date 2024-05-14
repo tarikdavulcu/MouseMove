@@ -37,7 +37,7 @@ namespace MouseMove.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Test")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Mouse Move")]
         public string AppName {
             get {
                 return ((string)(this["AppName"]));
